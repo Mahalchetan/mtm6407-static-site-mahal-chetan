@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Tropical Site</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Custom styles -->
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Make the body take full height */
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Create a flex container for the body content */
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 90vh; /* Full viewport height */
+    }
+
+    /* Ensure the footer stays at the bottom */
+    footer {
+      margin-top: auto; /* Push the footer to the bottom of the page */
+      background-color: #333;
+      color: white;
+    }
+
+    /* Navigation styling */
+    nav {
+      background-color: #008cba;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav .navbar-nav .nav-link {
+      color: white !important;
+      padding: 10px 20px;
+    }
+
+    nav .navbar-nav .nav-link:hover {
+      background-color: #005f73;
+      border-radius: 5px;
+    }
+
+    /* Main Section Styling */
+    section {
+      display: none; /* Hide all sections by default */
+      padding: 40px 0;
+    }
+
+    .active-section {
+      display: block;
+    }
+
+    /* Heading Styles */
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+
+    /* About Section Styling */
+    #about p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* Gallery Section Styling */
+    #gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Blog Section Styling */
+    #blog ul {
+      list-style-type: none;
+    }
+
+    #blog li {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    #blog a {
+      color: #008cba;
+      text-decoration: none;
+    }
+
+    #blog a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact Section Styling */
+    #contact form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    #contact .form-label {
+      font-size: 16px;
+      color: #333;
+    }
+
+    #contact .form-control {
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="content-wrapper">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Tropical Site</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" id="home-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="about-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="gallery-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="blog-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+
+    <!-- Home Section -->
+    <section id="home" class="active-section container mt-5">
+      <h1>Welcome to My Tropical Site</h1>
+      <p>Welcome to my tropical paradise! 🌴
+        Join me as I explore some of the most breathtaking tropical destinations across the globe. From the clear turquoise waters and white sandy beaches to the lush green jungles and vibrant cultures, this site is dedicated to sharing my journey through the tropics. Whether you're seeking adventure, relaxation, or simply inspiration, you've come to the right place. Discover hidden gems, tropical resorts, and the beauty of nature like never before. Let’s embark on a journey of exploration and connection with the natural world, together.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mt-5">
+      <h1>About Me</h1>
+      <p>About Me:
+        Hi, I’m Chetan mahal, an avid traveler with a deep passion for tropical islands, nature, and all things travel-related. My love for the tropics began at a young age, and since then, I’ve been on a mission to explore the world’s most stunning tropical destinations. I believe that nature has the power to heal, inspire, and rejuvenate, and that’s exactly what I aim to share with you. Through this site, I hope to inspire you to step out of your comfort zone, discover new places, and immerse yourself in the wonders of tropical landscapes. Follow along as I capture the essence of these islands, from lush rainforests and vibrant coral reefs to the rich cultures that call these paradises home.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container mt-5">
+      <h1>Gallery</h1>
+      <p>Enjoy a collection of my favorite photos from my tropical adventures!</p>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <img src="images/1.jpg" class="img-fluid" alt="Gallery Image 1">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="images/2.jpg" class="img-fluid" alt="Gallery Image 2">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="images/3.jpg" class="img-fluid" alt="Gallery Image 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="container mt-5">
+      <h1>Blog</h1>
+      <p>Tropical Travels Blog:
+        Welcome to my blog, where I share stories from my travels through tropical regions around the world. Here, you’ll find travel guides, photography, personal anecdotes, tips, and recommendations from my experiences exploring tropical islands. Whether you're planning a relaxing beach getaway or an adventurous trek through a tropical rainforest, you'll find inspiration and useful insights to make your trip unforgettable. From the best local foods to try, to sustainable travel practices, I strive to offer practical advice to help you fully embrace the beauty of these tropical havens. So, sit back, relax, and let your imagination wander as I take you to some of the most beautiful corners of our planet.</p>
+      <ul>
+        <li><a href="#">How to Unwind and Relax in Tropical Paradises</a></li>
+        <li><a href="#">Exotic Tropical Fruits You Must Try</a></li>
+        <li><a href="#">Top Hidden Tropical Islands You Need to Visit</a></li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+      <h1>Contact Me</h1>
+      <p>If you'd like to connect or collaborate, feel free to send me a message!</p>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 My Tropical Site | All Rights Reserved</p>
+  </footer>
+
+  <!-- Bootstrap JS (Optional for dropdowns, modals, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript to toggle sections -->
+  <script>
+    // Function to hide all sections
+    function hideAllSections() {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.remove('active-section');
+      });
+    }
+
+    // Function to show a section
+    function showSection(sectionId) {
+      hideAllSections();
+      const section = document.getElementById(sectionId);
+      section.classList.add('active-section');
+    }
+
+    // Event listeners for the navigation links
+    document.getElementById('home-link').addEventListener('click', function() {
+      showSection('home');
+    });
+
+    document.getElementById('about-link').addEventListener('click', function() {
+      showSection('about');
+    });
+
+    document.getElementById('gallery-link').addEventListener('click', function() {
+      showSection('gallery');
+    });
+
+    document.getElementById('blog-link').addEventListener('click', function() {
+      showSection('blog');
+    });
+
+    document.getElementById('contact-link').addEventListener('click', function() {
+      showSection('contact');
+    });
+
+    // Show the home section by default
+    showSection('home');
+  </script>
+</body>
+
+</html>
